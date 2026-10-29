@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="hr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simeon Adamić i 14 Lažnih Svjedoka | Riječka Povijest</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond za naslove, Inter za moderan tekst -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        amber: {
+                            850: '#6d300c',
+                            950: '#381404',
+                        },
+                        stone: {
+                            850: '#211e1c',
+                            950: '#110f0e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar & glass effects */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #110f0e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #78350f;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b45309;
+        }
+        .glass-panel {
+            background: rgba(30, 27, 24, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(217, 119, 6, 0.15);
+        }
+        .glass-card {
+            background: rgba(41, 37, 36, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(217, 119, 6, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(52, 46, 44, 0.85);
+            border-color: rgba(245, 158, 11, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(180, 83, 9, 0.25);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-stone-950 text-stone-300 font-sans antialiased selection:bg-amber-700 selection:text-amber-100 overflow-x-hidden">
+
+    <!-- Navigacija -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-amber-900/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-700 to-yellow-500 flex items-center justify-center text-stone-950 font-serif font-bold text-xl shadow-lg shadow-amber-900/40 group-hover:scale-105 transition-transform">
+                    SA
+                </div>
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-stone-100 block group-hover:text-amber-400 transition-colors">Simeon Adamić</span>
+                    <span class="text-xs text-amber-500/80 tracking-widest uppercase block -mt-1 font-medium">Riječka Priča (18.-19. st.)</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#priča" class="hover:text-amber-400 transition-colors py-1">O Priči</a>
+                <a href="#vremenska-crta" class="hover:text-amber-400 transition-colors py-1">Vremenska Crta</a>
+                <a href="#skulpture" class="hover:text-amber-400 transition-colors py-1">Skulpture Likova</a>
+                <a href="#kviz" class="hover:text-amber-400 transition-colors py-1">Kviz Znanja</a>
+            </nav>
+
+            <a href="#skulpture" class="px-4 py-2 rounded-full bg-gradient-to-r from-amber-600 to-amber-700 text-amber-50 font-medium text-xs sm:text-sm hover:from-amber-500 hover:to-amber-600 transition-all shadow-md shadow-amber-950/80 flex items-center space-x-2">
+                <span>Istraži Likove</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Sekcija -->
+    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden">
+        <!-- Pozadinski ambient sjaj -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-yellow-600/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10 space-y-8">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-amber-950/80 border border-amber-600/30 text-amber-400 text-xs sm:text-sm font-medium uppercase tracking-widest backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                <span>Povijesna Intriga iz Starog Riječkog Doba</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-stone-100 leading-tight">
+                Legenda o Nepravdi, Zavisti i <span class="gold-gradient-text">14 Lažnih Svjedoka</span>
+            </h1>
+
+            <p class="text-stone-300 text-lg sm:text-xl font-light leading-relaxed max-w-3xl mx-auto">
+                Kada je ugledni riječki trgovac Simeon Adamić započeo obnovu kapelice sv. Martina, nije ni slutio da će arheološko nalazište pokrenuti val ljubomore, lažnih optužbi i dramatičnu borbu za pravdu koja je obitelji zauvijek obilježila riječku baštinu.
+            </p>
+
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="#priča" class="px-8 py-3.5 rounded-xl bg-amber-600 text-stone-950 font-semibold hover:bg-amber-500 transition-all shadow-lg shadow-amber-900/30 flex items-center space-x-2">
+                    <span>Pročitajte Cijelu Priču</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="#vremenska-crta" class="px-8 py-3.5 rounded-xl bg-stone-900 text-stone-200 border border-stone-800 hover:border-amber-700/50 hover:bg-stone-850 transition-all">
+                    Pogledaj Vremensku Crtu
+                </a>
+            </div>
+
+            <!-- Brza statistika -->
+            <div class="pt-12 grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-stone-800/80 max-w-3xl mx-auto text-left">
+                <div class="p-3">
+                    <div class="font-serif text-3xl font-bold text-amber-400">14</div>
+                    <div class="text-xs text-stone-400 uppercase tracking-wider mt-1">Lažnih Svjedoka</div>
+                </div>
+                <div class="p-3">
+                    <div class="font-serif text-3xl font-bold text-amber-400">Beč</div>
+                    <div class="text-xs text-stone-400 uppercase tracking-wider mt-1">Carski Dvor</div>
+                </div>
+                <div class="p-3">
+                    <div class="font-serif text-3xl font-bold text-amber-400">Fiumara</div>
+                    <div class="text-xs text-stone-400 uppercase tracking-wider mt-1">Kuća sa Skulpturama</div>
+                </div>
+                <div class="p-3">
+                    <div class="font-serif text-3xl font-bold text-amber-400">Rijeka</div>
+                    <div class="text-xs text-stone-400 uppercase tracking-wider mt-1">Guvernerova Palača</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Priči -->
+    <section id="priča" class="py-20 px-4 relative bg-stone-900/50 border-y border-stone-850">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center space-y-3 mb-12">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-amber-500">Povijesni Zapisi</h2>
+                <h3 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100">Tajne Kapelice i Pohlepa Gradskih Moćnika</h3>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+                <!-- Glavni tekstualni dio -->
+                <div class="md:col-span-7 glass-panel p-8 sm:p-10 rounded-2xl space-y-6 text-stone-300 leading-relaxed">
+                    <p class="text-lg font-serif italic text-amber-200 border-l-2 border-amber-500 pl-4">
+                        "Simeon Adamić odlučio je obnoviti kapelicu sv. Martina. Radnici su prilikom obnove pronašli arheološko nalazište. To su najvjerovatnije bili posmrtni ostaci, no počela je kružiti priča kako je to zapravo bilo blago..."
+                    </p>
+                    <p>
+                        Ubrzo nakon toga, gradom su zavladale glasine potaknute ljubomorom i zavisti prema Adamićevom bogatstvu i utjecaju. Njegovi protivnici optužili su ga za tajno iskapanje i utaju poreza na navodno pronađeno blago.
+                    </p>
+                    <p>
+                        Na sudu je protiv Adamića lažno svjedočilo čak <strong>14 svjedoka</strong>. Pod težinom lažnih iskaza, nevini je trgovac osuđen i zatvoren u tamnicu u Crikvenici.
+                    </p>
+                    <p>
+                        No, njegov sin, Andrija Ljudevit Adamić, nije oklijevao – odmah je krenuo u Beč kako bi pred samim carem iznio pravu istinu. Dokazavši očevu nevinost, izborio je njegovo oslobođenje.
+                    </p>
+                </div>
+
+                <!-- Kartica istaknute činjenice -->
+                <div class="md:col-span-5 space-y-6">
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-amber-500 space-y-4">
+                        <div class="text-amber-400 font-serif text-2xl font-bold">Osveta u Kamenu</div>
+                        <p class="text-sm text-stone-300 leading-relaxed">
+                            Po izlasku iz zatvora, Adamić gradi veličanstvenu kuću na Fiumari. U znak sjećanja na pretrpljenu nepravdu, u dvorištu daje isklesati i postaviti portrete lažnih svjedoka kako bi ostali zapamćeni u sramoti.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">🏛️</span>
+                            <h4 class="font-serif text-lg font-semibold text-stone-100">Gdje se nalaze danas?</h4>
+                        </div>
+                        <p class="text-sm text-stone-400">
+                            Sačuvane skulpture lažnih svjedoka danas ponosno stoje u dvorištu Pomorskog i povijesnog muzeja Hrvatskog primorja u Guvernerovoj palači u Rijeci.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="video" class="py-16 px-4 bg-stone-900/30 border-y border-stone-850">
+    <div class="max-w-4xl mx-auto space-y-6">
+        <div class="text-center space-y-2">
+            <h2 class="text-xs font-semibold uppercase tracking-widest text-amber-500">Video Prilog</h2>
+            <h3 class="font-serif text-3xl sm:text-4xl font-bold text-stone-100">Pogledajte Priču o Simeonu Adamiću</h3>
+        </div>
+<div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-amber-600/20 glass-panel" style="padding-top: 56.25%;">
+            <iframe 
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/w5HiZj5KtLk" 
+                title="Simeon Adamić i 14 Lažnih Svjedoka" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+    <!-- Vremenska Crta -->
+    <section id="vremenska-crta" class="py-24 px-4 max-w-5xl mx-auto">
+        <div class="text-center space-y-3 mb-16">
+            <h2 class="text-xs font-semibold uppercase tracking-widest text-amber-500">Slijed Događaja</h2>
+            <h3 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100">Vremenska Crta Afera i Pobjede Pravde</h3>
+        </div>
+
+        <div class="relative border-l-2 border-stone-800 ml-4 md:ml-32 space-y-12">
+
+            <!-- Korak 1 -->
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-stone-900 border-2 border-amber-500 group-hover:scale-125 group-hover:bg-amber-500 transition-all"></div>
+                <span class="hidden md:block absolute -left-32 top-1 text-sm font-semibold text-amber-500/80 font-serif">Početak radova</span>
+                <div class="glass-card p-6 rounded-2xl">
+                    <span class="text-xs font-semibold text-amber-500 uppercase tracking-widest block md:hidden mb-1">Početak radova</span>
+                    <h4 class="font-serif text-xl font-bold text-stone-100 mb-2">Obnova Kapelice sv. Martina</h4>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Simeon Adamić financira obnovu kapelice. Radnici tijekom iskapanja nailaze na arheološko nalazište s posmrtnim ostacima.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Korak 2 -->
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-stone-900 border-2 border-amber-500 group-hover:scale-125 group-hover:bg-amber-500 transition-all"></div>
+                <span class="hidden md:block absolute -left-32 top-1 text-sm font-semibold text-amber-500/80 font-serif">Glasine i Utaja</span>
+                <div class="glass-card p-6 rounded-2xl">
+                    <span class="text-xs font-semibold text-amber-500 uppercase tracking-widest block md:hidden mb-1">Glasine i Utaja</span>
+                    <h4 class="font-serif text-xl font-bold text-stone-100 mb-2">Priče o Tajnom Blagu</h4>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Zbog zavisti sugrađana širi se lažna vijest da je pronađeno zlato. Vlasti optužuju Adamića za utaju poreza na pronađeno blago.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Korak 3 -->
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-stone-900 border-2 border-red-500 group-hover:scale-125 group-hover:bg-red-500 transition-all"></div>
+                <span class="hidden md:block absolute -left-32 top-1 text-sm font-semibold text-red-400 font-serif">Suđenje i Zatvor</span>
+                <div class="glass-card p-6 rounded-2xl border-l-2 border-red-500/50">
+                    <span class="text-xs font-semibold text-red-400 uppercase tracking-widest block md:hidden mb-1">Suđenje i Zatvor</span>
+                    <h4 class="font-serif text-xl font-bold text-stone-100 mb-2">14 Lažnih Svjedoka</h4>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Četrnaestero potplaćenih i ljubomornih svjedoka lažno optužuje Adamića. Sud ga proglašava krivim i odvodi u zatvor u Crikvenici.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Korak 4 -->
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-stone-900 border-2 border-amber-500 group-hover:scale-125 group-hover:bg-amber-500 transition-all"></div>
+                <span class="hidden md:block absolute -left-32 top-1 text-sm font-semibold text-amber-500/80 font-serif">Odlazak u Beč</span>
+                <div class="glass-card p-6 rounded-2xl">
+                    <span class="text-xs font-semibold text-amber-500 uppercase tracking-widest block md:hidden mb-1">Odlazak u Beč</span>
+                    <h4 class="font-serif text-xl font-bold text-stone-100 mb-2">Sin pred Carem</h4>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Adamićev sin hitno putuje na carski dvor u Beč. Izlaže nepobitne dokaze nevinosti, nakon čega car zapovijeda trenutno puštanje.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Korak 5 -->
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-stone-900 border-2 border-emerald-500 group-hover:scale-125 group-hover:bg-emerald-500 transition-all"></div>
+                <span class="hidden md:block absolute -left-32 top-1 text-sm font-semibold text-emerald-400 font-serif">Gradnja i Osveta</span>
+                <div class="glass-card p-6 rounded-2xl border-l-2 border-emerald-500/50">
+                    <span class="text-xs font-semibold text-emerald-400 uppercase tracking-widest block md:hidden mb-1">Gradnja i Osveta</span>
+                    <h4 class="font-serif text-xl font-bold text-stone-100 mb-2">Palača na Fiumari</h4>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Oslobođeni Adamić gradi novu kuću na Fiumari i u dvorištu izlaže kamene biste svojih 14 lažnih svjedoka kao javni podsjetnik.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Korak 6 -->
+            <div class="relative pl-8 md:pl-10 group">
+                <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-stone-900 border-2 border-amber-500 group-hover:scale-125 group-hover:bg-amber-500 transition-all"></div>
+                <span class="hidden md:block absolute -left-32 top-1 text-sm font-semibold text-amber-500/80 font-serif">Današnjica</span>
+                <div class="glass-card p-6 rounded-2xl">
+                    <span class="text-xs font-semibold text-amber-500 uppercase tracking-widest block md:hidden mb-1">Današnjica</span>
+                    <h4 class="font-serif text-xl font-bold text-stone-100 mb-2">Guvernerova Palača</h4>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Skulpture su prenesene u dvorište Guvernerove palače u Rijeci. Jedna je bista nažalost zauvijek nestala u Drugom svjetskom ratu.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Sculptures Section -->
+    <section id="skulpture" class="py-20 px-4 bg-stone-900/40 border-t border-stone-850">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="text-center space-y-3">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-amber-500">Kamen Sramote</h2>
+                <h3 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100">Prepoznati Likovi sa Skulptura</h3>
+                <p class="text-stone-400 max-w-2xl mx-auto text-sm sm:text-base">
+                    Iako je svjedoka bilo 14, kroz narodnu predaju i analizu detaljno su identifikirani karakteristični staleški likovi starog društva.
+                </p>
+            </div>
+
+            <!-- Interaktivni filter gumbi -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3" id="character-filters">
+                <button onclick="filterCharacters('all')" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-amber-600 text-stone-950 transition-all">Svi Likovi</button>
+                <button onclick="filterCharacters('plemstvo')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-stone-850 text-stone-300 hover:bg-stone-800 transition-all">Plemstvo & Stalež</button>
+                <button onclick="filterCharacters('osoblje')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-stone-850 text-stone-300 hover:bg-stone-800 transition-all">Služba & Radnici</button>
+                <button onclick="filterCharacters('nestala')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-stone-850 text-stone-300 hover:bg-stone-800 transition-all">Nestala Bista</button>
+            </div>
+
+            <!-- Mreža kartica likova -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="character-grid">
+
+                <!-- Lik 1 -->
+                <div class="char-card glass-card p-6 rounded-2xl flex flex-col justify-between space-y-4" data-category="plemstvo">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-950/80 border border-amber-600/30 flex items-center justify-center text-3xl shadow-inner">
+                            💃
+                        </div>
+                        <div>
+                            <span class="text-xs text-amber-500 font-semibold uppercase tracking-wider">Građanski Stalež</span>
+                            <h4 class="font-serif text-2xl font-bold text-stone-100">Dama s Velikom Frizurom</h4>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                            
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+
+                    </div>
+                </div>
+
+                <!-- Lik 2 -->
+                <div class="char-card glass-card p-6 rounded-2xl flex flex-col justify-between space-y-4" data-category="osoblje">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-950/80 border border-amber-600/30 flex items-center justify-center text-3xl shadow-inner">
+                            🤱
+                        </div>
+                        <div>
+                            <span class="text-xs text-amber-500 font-semibold uppercase tracking-wider">Kućanstvo</span>
+                            <h4 class="font-serif text-2xl font-bold text-stone-100">Dadilja</h4>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                     
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+  
+                      
+                    </div>
+                </div>
+
+                <!-- Lik 3 -->
+                <div class="char-card glass-card p-6 rounded-2xl flex flex-col justify-between space-y-4" data-category="osoblje">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-950/80 border border-amber-600/30 flex items-center justify-center text-3xl shadow-inner">
+                            🏇
+                        </div>
+                        <div>
+                            <span class="text-xs text-amber-500 font-semibold uppercase tracking-wider">Gradska Služba</span>
+                            <h4 class="font-serif text-2xl font-bold text-stone-100">Kočijaš</h4>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                    
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+                     
+ 
+                    </div>
+                </div>
+
+                <!-- Lik 4 -->
+                <div class="char-card glass-card p-6 rounded-2xl flex flex-col justify-between space-y-4" data-category="plemstvo">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-950/80 border border-amber-600/30 flex items-center justify-center text-3xl shadow-inner">
+                            ⚔️
+                        </div>
+                        <div>
+                            <span class="text-xs text-amber-500 font-semibold uppercase tracking-wider">Vojni Stalež</span>
+                            <h4 class="font-serif text-2xl font-bold text-stone-100">Časnik</h4>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                           
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+                        
+                    </div>
+                </div>
+
+                <!-- Lik 5 -->
+                <div class="char-card glass-card p-6 rounded-2xl flex flex-col justify-between space-y-4" data-category="osoblje">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-950/80 border border-amber-600/30 flex items-center justify-center text-3xl shadow-inner">
+                            🧹
+                        </div>
+                        <div>
+                            <span class="text-xs text-amber-500 font-semibold uppercase tracking-wider">Osoblje</span>
+                            <h4 class="font-serif text-2xl font-bold text-stone-100">Služavka</h4>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                          
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+                       
+                    </div>
+                </div>
+
+                <!-- Lik 6 -->
+                <div class="char-card glass-card p-6 rounded-2xl flex flex-col justify-between space-y-4" data-category="plemstvo">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-950/80 border border-amber-600/30 flex items-center justify-center text-3xl shadow-inner">
+                            🎩
+                        </div>
+                        <div>
+                            <span class="text-xs text-amber-500 font-semibold uppercase tracking-wider">Trgovačka Elita</span>
+                            <h4 class="font-serif text-2xl font-bold text-stone-100">Elegantni Gospodin</h4>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                           
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+                       
+                    </div>
+                </div>
+
+                <!-- Lik 7 (Izgubljena Bista) -->
+                <div class="char-card glass-card p-6 rounded-2xl flex flex-col justify-between space-y-4 border-red-900/30 bg-stone-900/80" data-category="nestala">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-red-950/60 border border-red-600/30 flex items-center justify-center text-3xl shadow-inner text-red-300">
+                            ❓
+                        </div>
+                        <div>
+                            <span class="text-xs text-red-400 font-semibold uppercase tracking-wider">Izgubljena Baština</span>
+                            <h4 class="font-serif text-2xl font-bold text-stone-100">Nestala Skulptura</h4>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed">
+                           
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-stone-800 flex justify-between items-center text-xs text-red-400">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interaktivni Kviz -->
+    <section id="kviz" class="py-24 px-4 relative">
+        <div class="max-w-3xl mx-auto glass-panel p-8 sm:p-12 rounded-3xl border border-amber-600/20 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-amber-600/10 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="text-center space-y-3 mb-8">
+                <span class="text-xs font-semibold uppercase tracking-widest text-amber-500">Provjerite Znanje</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold text-stone-100">Koliko dobro znate riječku legendu?</h3>
+            </div>
+
+            <!-- Quiz Box -->
+            <div id="quiz-container" class="space-y-6">
+                <div class="flex justify-between text-xs text-stone-400 uppercase tracking-widest">
+                    <span id="quiz-progress">Pitanje 1 od 3</span>
+                    <span id="quiz-score-tracker">Točnih: 0</span>
+                </div>
+
+                <!-- Pitanje -->
+                <h4 id="quiz-question" class="font-serif text-xl sm:text-2xl font-semibold text-stone-200 min-h-[60px]">
+                    U kojem se gradu nalazio zatvor u kojemu je izdržavao kaznu nevini Simeon Adamić?
+                </h4>
+
+                <!-- Odgovori -->
+                <div id="quiz-options" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <!-- Dinamički generirane opcije -->
+                </div>
+
+                <div id="quiz-feedback" class="hidden p-4 rounded-xl text-sm font-medium text-center"></div>
+
+                <div class="flex justify-between items-center pt-4">
+                    <button id="next-btn" onclick="nextQuestion()" class="hidden ml-auto px-6 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-stone-950 font-semibold text-sm transition-all">
+                        Sljedeće Pitanje →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Rezultat Kviza -->
+            <div id="quiz-result" class="hidden text-center space-y-6 py-8">
+                <div class="text-5xl">📜</div>
+                <h4 class="font-serif text-3xl font-bold text-amber-400">Kviz Završen!</h4>
+                <p id="quiz-final-text" class="text-stone-300 text-lg"></p>
+                <button onclick="restartQuiz()" class="px-8 py-3 rounded-xl bg-amber-600 text-stone-950 font-bold hover:bg-amber-500 transition-all">
+                    Igraj Ponovno
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podnožje / Footer -->
+    <footer class="py-12 border-t border-stone-850 text-center text-xs text-stone-400 space-y-4">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-serif font-bold text-lg text-amber-500">SA</span>
+                <span class="text-stone-300 font-medium">Simeon Adamić & Riječka Baština</span>
+            </div>
+            <p>Izradile Vita Čokljat, Lara Gorup, Franka Protić, Nevena Zorić, Mia Žerić</p>
+            <p>&copy; 2026. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <!-- Interaktivna JS Skripta -->
+    <script>
+        // --- FILTRIRANJE SKULPTURA ---
+        function filterCharacters(category) {
+            const cards = document.querySelectorAll('.char-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-amber-600', 'text-stone-950');
+                btn.classList.add('bg-stone-850', 'text-stone-300');
+            });
+
+            event.target.classList.add('active', 'bg-amber-600', 'text-stone-950');
+            event.target.classList.remove('bg-stone-850', 'text-stone-300');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // --- KVIZ LOGIKA ---
+        const questions = [
+            {
+                q: "U kojem se gradu nalazio zatvor u kojemu je izdržavao kaznu nevini Simeon Adamić?",
+                options: ["Rijeka", "Crikvenica", "Opatija", "Trst"],
+                correct: 1
+            },
+            {
+                q: "Kamo je otputovao Adamićev sin kako bi dokazao očevu nevinost pred carem?",
+                options: ["U Budimpeštu", "U Veneciju", "U Beč", "U Zagreb"],
+                correct: 2
+            },
+            {
+                q: "Gdje se danas nalaze sačuvane skulpture 14 lažnih svjedoka?",
+                options: ["U dvorištu Guvernerove palače", "U Trsatskoj gradini", "Na Korzu", "U Bečkom muzeju"],
+                correct: 0
+            }
